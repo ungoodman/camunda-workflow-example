@@ -1,0 +1,15 @@
+zeebe:
+#  oAuthApi: http://localhost:18080/auth/realms/camunda-platform/protocol/openid-connect/token
+#  audience: zeebe-api
+#  clientId: zeebe
+#  clientSecret: zecret
+#  zeebeApi: localhost:26500
+  client:
+    broker:
+      gateway-address: localhost:26500
+    security:
+      plaintext: true
+    connection-mode: ADDRESS
+
+operate-api:
+  process-instance-search: http://localhost:8081/v1/process-instances/search
